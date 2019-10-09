@@ -1,0 +1,143 @@
+@charset "utf-8";
+@import url("font-awesome.min.css");
+@import url("framework.css");
+
+
+/* Footer
+--------------------------------------------------------------------------------------------------------------- */
+#footer{padding:80px 0;}
+
+#footer .heading{margin-bottom:50px; font-size:1.2rem;}
+
+#footer .linklist li{display:block; margin-bottom:15px; padding:0 0 15px 0; border-bottom:1px solid;}
+#footer .linklist li:last-child{margin:0; padding:0; border:none;}
+#footer .linklist li::before, #footer .linklist li::after{display:table; content:"";}
+#footer .linklist li, #footer .linklist li::after{clear:both;}
+
+#footer .contact{}
+#footer .contact.linklist li, #footer .contact.linklist li:last-child{position:relative; padding-left:40px;}
+#footer .contact li *{margin:0; padding:0; line-height:1.6;}
+#footer .contact li i{display:block; position:absolute; top:0; left:0; width:30px; font-size:16px; text-align:center;}
+
+#footer input, #footer button{border:1px solid;}
+#footer input{display:block; width:100%; padding:8px;}
+#footer button{padding:8px 18px 10px; text-transform:uppercase; font-weight:700; cursor:pointer;}
+
+
+/* Copyright
+--------------------------------------------------------------------------------------------------------------- */
+#copyright{padding:20px 0;}
+#copyright *{margin:0; padding:0;}
+
+
+
+/* Font Awesome Social Icons
+--------------------------------------------------------------------------------------------------------------- */
+.faico{margin:0; padding:0; list-style:none;}
+.faico li{display:inline-block; margin:8px 5px 0 0; padding:0; line-height:normal;}
+.faico li:last-child{margin-right:0;}
+.faico a{display:inline-block; width:36px; height:36px; line-height:36px; font-size:18px; text-align:center;}
+
+.faico a{color:#FFFFFF; background-color:#000000;}
+.faico a:hover{}
+
+.faicon-facebook:hover{background-color:#3B5998;}
+.faicon-google-plus:hover{background-color:#DB4A39;}
+.faicon-twitter:hover{background-color:#00ACEE;}
+.faicon-vk:hover{background-color:#4E658E;}
+
+/* Header
+--------------------------------------------------------------------------------------------------------------- */
+#header{}
+#header #logo{margin:30px 0 0 0;}
+#header #logo h1{margin:0; padding:0; font-size:22px;}
+/* Page Intro
+--------------------------------------------------------------------------------------------------------------- */
+#pageintro{padding:17% 0;}
+#pageintro *{word-wrap:break-word;}
+#pageintro .transbox{display:block; max-width:50%; padding:30px;}
+#pageintro .heading{margin-bottom:20px; font-weight:400;}
+#pageintro p{margin:0; padding:0; font-size:1.2rem;}
+#pageintro footer{margin-top:3%;}
+/* Navigation
+--------------------------------------------------------------------------------------------------------------- */
+nav ul, nav ol{margin:0; padding:0; list-style:none;}
+#mainav, #breadcrumb, .sidebar nav{line-height:normal;}
+#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:10px; line-height:10px;}
+/* Top Navigation */
+#mainav{}
+#mainav ul.clear{margin-top:3px;}
+#mainav ul{text-transform:uppercase;}
+#mainav ul ul{z-index:9999; position:absolute; width:180px; text-transform:none;}
+#mainav ul ul ul{left:180px; top:0;}
+#mainav li{display:inline-block; position:relative; margin:0 15px 0 0; padding:0;}
+#mainav li:last-child{margin-right:0;}
+#mainav li li{width:100%; margin:0;}
+#mainav li a{display:block; padding:30px 0;}
+#mainav li li a{border:solid; border-width:0 0 1px 0;}
+#mainav .drop{padding-left:15px;}
+#mainav li li a, #mainav li li .drop{display:block; margin:0; padding:10px 15px;}
+#mainav .drop, #mainav li li .drop{content:"\f0d7";}
+#mainav .drop::after{top:35px; left:5px;}
+#mainav li li .drop::after{top:15px; left:5px;}
+#mainav ul ul{visibility:hidden; opacity:0;}
+#mainav ul li:hover > ul{visibility:visible; opacity:1;}
+#mainav form{display:none; margin:0; padding:0;}
+#mainav form select, #mainav form select option{display:block; cursor:pointer; outline:none;}
+#mainav form select{width:100%; padding:5px; border:1px solid;}
+#mainav form select option{margin:5px; padding:0; border:none;}
+/* Colours
+--------------------------------------------------------------------------------------------------------------- */
+body{color:#BFFF00; background-color:rgba(0, 0, 0, 0.8);}
+a{color:#BFFF00;}/* Обводка кнопки */
+a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
+hr, .borderedbox{border-color:#1B2026;}
+input:focus, textarea:focus, *:required:focus{border-color:#BFFF00;}
+.overlay{color:#1B2026; background-color:inherit;}
+.overlay::after{color:inherit; background-color:rgba(0, 0, 0, 0.8);/* #1B2026 */}
+.overlay.light{color:#292929;}
+.overlay.light::after{background-color:#BFFF00;}
+.overlay.coloured::after{background-color:#BFFF00; /* #BFFF00 */}
+.btn, .btn.inverse:hover{color:#FFFFFF; background-color:rgba(0, 0, 0, 0.8); border-color:#FFFFFF;} /* Заливка кнопки */ 
+.btn:hover, .btn.inverse{color:#BFFF00; background-color:rgba(0, 0, 0, 0.8); border-color:#BFFF00;}
+/* Rows */
+.row1{color:#FFFFFF; background-color:rgba(0, 0, 0, 0.8);/* #1B2026 */ border-color:rgba(255,255,255,.1);}
+.row2{color:#474747; background-color:rgba(255,255,255,.8);}
+.row3{color:#474747; background-color:#FFFFFF;}
+.row4{color:#A8A7A6; background-color:rgba(0, 0, 0, 0.8);}
+.row5, .row5 a{color:#BFFF00; background-color:rgb(0, 0, 0);}
+/* Footer */
+#footer .heading{color:#FFFFFF;}
+#footer hr, #footer .borderedbox, #footer .linklist li{border-color:rgba(255,255,255,.1);}
+
+#footer input, #footer button{border-color:transparent;}
+#footer input{color:#FFFFFF; background-color:#000000;}
+#footer input:focus{border-color:#BFFF00;}
+#footer button{color:#FFFFFF; background-color:rgba(191, 255, 0, 0.79);}
+
+/* Header */
+#header #logo a{color:inherit;}
+#header #logo a:hover, #header #logo ::first-letter{color:#BFFF00;}
+/* Page Intro */
+#pageintro .transbox{color:#FFFFFF; background-color:rgba(0, 0, 0, 0.8);/* #1B2026 */}
+/* Navigation */
+#mainav li a{color:inherit;}
+#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#BFFF00; background-color:inherit;}
+#mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(0, 0, 0, 0.8); border-color:rgba(0, 0, 0, 0.8);}
+#mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:rgba(191, 255, 0, 0.49);}
+#mainav form select{color:#FFFFFF; background-color:rgba(191, 255, 0, 0.49); border-color:rgba(255,255,255,.2);}
+#breadcrumb a{color:inherit; background-color:inherit;}
+#breadcrumb li:last-child a{color:#BFFF00;}
+.container .sidebar nav a{color:inherit; border-color:#F4F4F4;}
+.container .sidebar nav a:hover{color:#BFFF00;}
+.pagination a, .pagination strong{border-color:#F4F4F4;}
+.pagination .current *{color:#FFFFFF; background-color:#BFFF00;}
+#backtotop{color:#FFFFFF; background-color:#BFFF00;}
+/* Media Queries
+--------------------------------------------------------------------------------------------------------------- */
+@-ms-viewport{width:device-width;}
+/* Max Wrapper Width - Laptop, Desktop etc.
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:720px){
+	.hoc{max-width:1080px;}
+}
